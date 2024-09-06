@@ -1,6 +1,4 @@
 <<<<<<< HEAD
 # Portfolio-Tailwind-CSS
-=======
-# Starbucks-Clone-Tailwind-CSS
-Starbucks Website clone using Tailwind CSS - Responsive Website 
->>>>>>> 59cf067 (Initial commit)
+This is your version, and you're keeping it.
+

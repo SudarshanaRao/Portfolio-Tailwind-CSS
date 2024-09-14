@@ -1,6 +1,0 @@
-{
-  "public": "src",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/src/index.html" }
-  ]
-}

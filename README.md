@@ -1,10 +1,10 @@
-## Portfolio Website 
-# Using Tailwind CSS
+# Portfolio Website 
+## Using Tailwind CSS
 
 
 
 
-# Screenshots 
+## Screenshots 
 
 **Home Page**
 

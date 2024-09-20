@@ -8,6 +8,7 @@
         <link href="./output.css" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="./tailwind.config.js"></script>
+        
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,7 @@
         <nav class=" px-5 lg:px-8 py-4 xl:px-[8%] w-full fixed z-50">
             <div class="container mx-auto flex justify-between items-center">
                 <a href="#" class="text-xl font-bold">Sudarshana Rao</a>
-                <div class="hidden md:flex gap-4 lg:gap-6 rounded-full py-2 px-8 shadow-sm bg-opacity-50 font-Ovo">
+                <div id="listItems" class="hidden md:flex gap-4 lg:gap-6 rounded-full py-2 px-8 shadow-sm bg-opacity-50 font-Ovo">
                     <a href="#home" class="">Home</a>
                     <a href="#about" class="">About Me</a>
                     <a href="#projects" class="">Projects</a>
@@ -171,12 +172,15 @@
             <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
                 I'd love to hear from you! If you have any questions, comments or feedback, please use the form below. 
             </p>
-            <form action="" class="max-w-2xl mx-auto">
+            <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+
+                <input type="hidden" name="access_key" value="c6740f64-048d-4aa8-861e-c9bd83d693af">
+
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 mb-8">
-                    <input type="text" placeholder="Enter your Name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
-                    <input type="email" placeholder="Enter your Email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+                    <input name="name" type="text" placeholder="Enter your Name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required>
+                    <input name="email" type="email" placeholder="Enter your Email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required>
                 </div>
-                <textarea rows="6" placeholder="Enter your Message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"></textarea>
+                <textarea name="message" rows="6" placeholder="Enter your Message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6" required></textarea>
                 <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500">Submit now <img src="./images/right-arrow-white.png" alt="" class="w-4"></button>
             </form>
          </div>
@@ -200,4 +204,5 @@
           </div>
 
     </body>
+    <script src="./script.js"></script>
 </html>
